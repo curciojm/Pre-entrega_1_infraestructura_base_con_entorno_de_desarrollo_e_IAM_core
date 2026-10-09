@@ -1,6 +1,3 @@
-# outputs.tf define qué valores de un módulo querés exponer hacia afuera para que puedan ser utilizados por el módulo padre/entorno
-# el output de dev expone todos los roles
-
 output "vpc_id" {
   description = "ID de la VPC del entorno de desarrollo."
   value       = module.network.vpc_id
