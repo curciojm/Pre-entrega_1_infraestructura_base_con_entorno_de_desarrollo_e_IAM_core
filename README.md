@@ -1,4 +1,4 @@
-# Preentrega 1 — Infraestructura base con Terraform y AWS
+# Pre-entrega 1 — Infraestructura base con Terraform y AWS
 
 ## Descripción
 
