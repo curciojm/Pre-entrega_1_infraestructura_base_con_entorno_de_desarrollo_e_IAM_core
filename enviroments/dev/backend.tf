@@ -8,6 +8,19 @@ terraform {
   }
 }
 
+# Bucket de ESTADO que va a ser la memoria del servicio
+# El terraform.tfstate es como la memoria de Terraform sobre los recursos que administra, todo el SERVICIO
+
+# La VPC y su ID.
+
+# Las subredes y sus IDs.
+
+# La tabla de rutas.
+
+# El endpoint de S3.
+
+# Los roles y políticas IAM.
+
 # Terraform necesita guardar un archivo llamado terraform.tfstate en un bucket
 
 # Por eso tenemos este esquema:

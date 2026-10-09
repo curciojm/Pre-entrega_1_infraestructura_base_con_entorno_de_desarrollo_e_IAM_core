@@ -60,6 +60,10 @@ resource "aws_vpc_endpoint" "s3" {
   service_name      = "com.amazonaws.${var.region}.s3"
   vpc_endpoint_type = "Gateway"
 
+# 1. ¿Qué es una tabla de rutas?
+# Una tabla de rutas contiene reglas que le indican a la red adónde enviar el tráfico según su destino
+# Un endpoint es un punto de acceso a un servicio. En AWS, permite que tus recursos se conecten a determinados 
+# servicios de AWS desde una VPC, y según el tipo de endpoint, sin pasar por internet público.
   route_table_ids = [
     aws_route_table.private.id
   ]
@@ -68,3 +72,7 @@ resource "aws_vpc_endpoint" "s3" {
     Name = "${var.environment}-s3-endpoint"
   }
 }
+
+# Porque funciona mediante rutas en las tablas de rutas de tu VPC. 
+# AWS ofrece también otros tipos, como los Interface Endpoints, que utilizan interfaces de 
+# red privadas y AWS PrivateLink para acceder a servicios
