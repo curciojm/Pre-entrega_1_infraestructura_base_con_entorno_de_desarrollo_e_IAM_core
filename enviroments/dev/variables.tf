@@ -17,3 +17,13 @@ variable "data_bucket_name" {
   description = "Nombre del bucket destinado a los datos del proyecto."
   type        = string
 }
+
+variable "private_subnet_1_cidr" {
+  type        = string
+  description = "CIDR de la primera subred privada."
+}
+
+variable "private_subnet_2_cidr" {
+  type        = string
+  description = "CIDR de la segunda subred privada."
+}
