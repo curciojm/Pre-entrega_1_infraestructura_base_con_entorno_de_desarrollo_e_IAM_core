@@ -12,3 +12,13 @@ variable "cidr_vpc" {
   description = "Bloque CIDR asignado a la VPC."
   type        = string
 }
+
+variable "private_subnet_1_cidr" {
+  type        = string
+  description = "Bloque CIDR de la primera subred privada."
+}
+
+variable "private_subnet_2_cidr" {
+  type        = string
+  description = "Bloque CIDR de la segunda subred privada."
+}

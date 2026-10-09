@@ -5,7 +5,7 @@
 *.tfstate
 *.tfstate.*
 
-# Archivos de variables con valores locales o sensibles
+# Variables locales o sensibles
 *.tfvars
 *.tfvars.json
 
@@ -13,15 +13,12 @@
 crash.log
 crash.*.log
 
-# Archivos de planes guardados
+# Planes guardados
 *.tfplan
+tfplan
 
 # Overrides locales
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-
-# Planes de ejecución de Terraform
-*.tfplan
-tfplan
